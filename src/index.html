@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <link href="css/output.css" rel="stylesheet">
+</head>
+<style>
+    #menu-toggle:checked ~ .menu {
+        width: 250px;
+    }
+    #menu-toggle:checked ~ .overlay {
+        display: block;
+    }
+</style>
+<body class="bg-white text-black font-poppins relative "> 
+
+   <!-- Header -->
+   <header class="flex justify-between items-center md:p-4 bg-yellow-500 md:bg-transparent text-white relative md:mx-24">
+   <img src="../assets/logo/logo1.png" alt="logo" class="w-20">
+    <label for="menu-toggle" class="block md:hidden p-4 cursor-pointer  ">
+        <div class="w-8 h-1 bg-white mb-1"></div>
+        <div class="w-8 h-1 bg-white mb-1"></div>
+        <div class="w-8 h-1 bg-white"></div>
+    </label>
+    <input type="checkbox" id="menu-toggle" class="hidden">
+    <nav class="menu fixed top-0 md:space-x-4 right-0 h-full w-0 bg-white shadow-lg overflow-x-hidden transition-width duration-500 pt-16 md:static md:w-auto  md:text-end  md:shadow-none md:bg-transparent md:pt-0 md:flex md:items-center z-30">
+        <label for="menu-toggle" class="absolute top-4 right-4 text-black font-bold md:hidden cursor-pointer">✕</label>
+        <a href="#work" class="block px-4 py-2 text-lg text-black hover:bg-gray-200 md:hover:bg-transparent md:text-black md:font-bold">WORK</a>
+        <a href="#about" class="block px-4 py-2 text-lg text-black hover:bg-gray-200 md:hover:bg-transparent md:text-black md:font-bold">ABOUT</a>
+        <a href="#blog" class="block px-4 py-2 text-lg text-black hover:bg-gray-200 md:hover:bg-transparent md:text-black md:font-bold">BLOG</a>
+        <a href="#contact" class="block px-4 py-2 text-lg text-black hover:bg-gray-200 md:hover:bg-transparent md:text-black md:font-bold">CONTACT</a>
+       
+    </nav>
+</header>
+ <!-- Overlay -->
+ <div class="overlay h-full fixed inset-0 bg-black hidden opacity-80  md:hidden z-20" id="overlay"></div>
+
+
+ <main class="md:mx-24">
+  <!-- Hero Section -->
+  <section class=" py-16 md:py-20">
+    <div class="mx-auto px-4 ">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 ">
+     <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Hello!!!<br>We Are Creative Digital Agency.</h1>
+        <p class="text-black mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#contact" class="bg-yellow-500 text-black px-6 py-3 uppercase">Send Message</a>
+      </div>
+      <div class=" bg-gray-200 h-64 md:h-96 mt-8 md:mt-0" ></div>
+    </div>
+  </div>
+
+  </section> 
+
+<!-- Work Showcase Section -->
+<section id="work" class="md:py-16 ">
+    <div class=" mx-auto px-4">
+      <h2 class="text-xl flex flex-col md:text-4xl font-bold mb-4">WORK SHOWCASE.</h2>
+      <div class="flex  md:justify-between items-center mb-8">
+        <div class=" space-x-0 md:space-x-4 ">
+          <button class="px-1 md:px-4 md:py-2 bg-yellow-500 text-black rounded-lg">All</button>
+          <button class="px-1 md:px-4 md:py-2 text-gray-700 :rounded-lg">Branding</button>
+          <button class="px-1 md:px-4 md:py-2 text-gray-700 rounded-lg">Illustration</button>
+          <button class="px-1 md:px-4 md:py-2 text-gray-700 rounded-lg">Web</button>
+        </div>
+        <div class="">
+          <select class="border-gray-300 rounded-lg">
+            <option>Newest First</option>
+          </select>
+        </div>
+      </div>
+ 
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-16">
+  
+        <div class="">
+       <div class="bg-yellow-500  flex flex-col items-center justify-center h-48 mb-8">
+        <a href="#" class="text-black text-2xl md:text-xl font-bold leading-normal">ARTWORK</a>
+        <p class="text-black">BRANDING</p>
+       </div>
+       <div class="bg-gray-200  flex flex-col items-center justify-center h-64 ">
+        <a href="#" class="text-black text-2xl md:text-3xl font-bold leading-normal  cursor-pointer "></a>
+      </div>
+      </div>
+      
+      <div class="">
+        <div class="bg-gray-200  flex flex-col items-center justify-center h-64  mb-8">
+            <a href="#" class="text-black text-2xl md:text-3xl font-bold leading-normal  cursor-pointer "></a>
+        </div>
+        <div class="bg-gray-200  flex flex-col items-center justify-center h-48 ">
+         <a href="#" class="text-black text-2xl md:text-3xl font-bold leading-normal  cursor-pointer "></a>
+       </div>
+       </div>
+      
+       <div class="">
+        <div class="bg-gray-200  flex flex-col items-center justify-center h-48 mb-8">
+            <a href="#" class="text-black text-2xl md:text-3xl font-bold leading-normal  cursor-pointer "></a>
+        </div>
+        <div class="bg-gray-200  flex flex-col items-center justify-center h-64 ">
+         <a href="#" class="text-black text-2xl md:text-3xl font-bold leading-normal  cursor-pointer "></a>
+       </div>
+       </div>
+      </div>
+      <div class="flex justify-center mt-8">
+        <a href="#" class="bg-yellow-500 text-black px-6 py-3 uppercase">Show Me More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logo Partners Section -->
+<section class="py-8 ">
+  <div class="flex justify-around items-center mb-8">
+
+    <img src="../assets/logo_partners/BackgroundEraser_20240618_190002171.png" alt="Logo 1" class="h-16">
+    <img src="../assets/logo_partners/BackgroundEraser_20240618_190124557.png" alt="Logo 2" class="h-16">
+    <img src="../assets/logo_partners/BackgroundEraser_20240618_190211105.png" alt="Logo 3" class="h-16">
+    <img src="../assets/logo_partners/BackgroundEraser_20240618_190002171.png" alt="Logo 4" class="h-16">
+    <img src="../assets/logo_partners/BackgroundEraser_20240618_190211105.png" alt="Logo 5" class="h-16">
+  </div>
+</section>
+
+<!-- ABOUT US Section -->
+<section id="" class="md:py-16 ">
+    <div class=" mx-auto px-4">
+      <h2 class="text-xl flex flex-col md:text-4xl font-bold mb-4">ABOUT US.</h2>
+      <div class="flex  flex-col  mb-4">
+        <p class="text-black text-left md:w-70p mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-6">
+       
+        <div class="bg-gray-200 md:h-72 h-64 relative leading-none ">
+           <div class="bg-yellow-500 h-14 w-75p absolute left-0 bottom-0 pl-2 pt-2 pb-4">
+            <p class="text-black text-lg md:text-xl font-bold leading-normal">Luke Skywalker</p>
+            <p class="text-white">Web Designer</p>
+           </div> 
+           
+          </div>
+          <div class="bg-gray-200 md:h-72  h-64 relative leading-none ">
+            <div class="bg-yellow-500 h-14 w-75p absolute left-0 bottom-0 pl-2 pt-2 pb-4 ">
+             <p class="text-black text-lg md:text-xl font-bold leading-normal">Luke Skywalker</p>
+             <p class="text-white">Web Designer</p>
+            </div>
+           </div>
+           <div class="bg-white md:h-72  h-64 items-center p-4 text-left py-12">
+             <h2 class="text-black text-lg md:text-xl font-bold mb-4">Little About Us</h2>
+             <p class="text-black mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             <a href="" class="text-black cursor-pointer font-semibold">Read More</a> 
+           </div>
+      
+      </div>
+     
+    </div> 
+  </section>
+
+  <!-- OUR BLOG Section -->
+<section id="" class="md:py-16 ">
+  <div class=" mx-auto px-4">
+    <h2 class="text-xl flex flex-col md:text-4xl font-bold mb-4">OUR BLOG.</h2>
+    <div class="flex  flex-col  mb-4">
+      <p class="text-black text-left md:w-70p mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  
+       <div>
+      <div class="bg-yellow-500  flex flex-col items-center justify-center h-64">
+          <a href="#" class="text-black text-2xl md:text-3xl font-bold leading-normal  cursor-pointer ">READ MORE</a>
+      </div>
+     
+      <div class="p-6 bg-white">
+          <h2 class="text-xl font-bold mb-2">SUPER ARTICLE DE BLOG !</h2>
+          <p class="text-black mb-4">Lorem ipsum dolor sit amet, consectetur undo thes tabore et dolore magna aliqua.</p>
+          <p class="text-black text-sm">20 May 2020</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="bg-gray-200  flex flex-col items-center justify-center h-64">
+          <a href="#" class="text-black text-2xl md:text-3xl font-bold leading-normal  cursor-pointer "></a>
+      </div>
+     
+      <div class="p-6 bg-white">
+          <h2 class="text-xl font-bold mb-2">SUPER ARTICLE DE BLOG !</h2>
+          <p class="text-black mb-4">Lorem ipsum dolor sit amet, consectetur undo thes tabore et dolore magna aliqua.</p>
+          <p class="text-black text-sm">20 May 2020</p>
+      </div>
+    </div>
+
+    <div>
+      <div class="bg-gray-200  flex flex-col items-center justify-center h-64">
+          <a href="#" class="text-black text-2xl md:text-3xl font-bold leading-normal  cursor-pointer "></a>
+      </div>
+     
+      <div class="p-6 bg-white">
+          <h2 class="text-xl font-bold mb-2">SUPER ARTICLE DE BLOG !</h2>
+          <p class="text-black mb-4">Lorem ipsum dolor sit amet, consectetur undo thes tabore et dolore magna aliqua.</p>
+          <p class="text-black text-sm">20 May 2020</p>
+      </div>
+    </div> 
+  </div>
+
+  </div> 
+</section>
+
+<!-- Contact Us Section -->
+<section id="" class="py-8 md:py-4">
+  <div class=" mx-auto px-4">
+    <h2 class="text-xl flex flex-col md:text-4xl font-bold mb-4">CONTACT US.</h2>
+    <div class="flex  flex-col  mb-4">
+      <p class="text-black text-left md:w-70p mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>  
+    <div class="flex flex-col md:flex-row ">
+  
+      <form class="w-full md:w-1/2 space-y-4 mr-8"> 
+        <div><h3 class="text-xl flex flex-col md:text-2xl font-bold mb-2">Send Us Message.</h3></div>
+        <div>
+          <label for="name" class="block text-gray-700">Name</label>
+          <input type="text" id="name" class="w-full border border-gray-300 rounded-lg p-2" placeholder="Your Name">
+        </div>
+        <div>
+          <label for="email" class="block text-black">Email</label>
+          <input type="email" id="email" class="w-full border border-gray-300 rounded-lg p-2" placeholder="Your Email">
+        </div>
+        <div>
+          <label for="message" class="block text-black">Message</label>
+          <textarea id="message" class="w-full border border-gray-300 rounded-lg p-2" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="bg-yellow-500 text-black px-6 py-3 uppercase">Send Message</button>
+      </form>
+      <div class="w-full md:w-1/2 bg-gray-200 h-64 md:h-auto mt-8 md:mt-0"></div>
+    </div>
+  </div>
+</section>
+ <!-- Logo adresse Section -->
+ <section class="py-8 ">
+  <div class=" mx-auto px-4">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0 ">
+
+<div class="">
+    <div class=" flex flex-col items-center justify-center"><img src="../assets/logo/gps.png" alt="Localisation" class="h-8 mb-2">
+    </div>
+    <div class="">
+      <p class="text-sm text-center ">1211 Awesome Avenue NY USD</p>
+    </div>
+  </div>
+
+    <div class="">
+      <div class=" flex flex-col items-center justify-center"><img src="../assets/logo/phone-call.png" alt="Tel" class="h-8 mb-2 "></div>
+      <div class="">
+        <p class="text-sm text-center">+00123-456-78  +00123-456-78</p>
+      </div>
+    </div>
+    
+    <div class="">
+      <div class=" flex flex-col items-center justify-center"><img src="../assets/logo/email.png" alt="Email" class="h-8 mb-2 "></div>
+      <div class="">
+        <p class="text-sm text-center">mint@mintemail.com</p>
+      </div>
+    </div>
+
+   </div>
+  </div>
+</section>
+
+ <!-- Logo Social Reseau Section -->
+ <section class="py-4 ">
+  <div class="flex  space-x-20 md:space-x-24  justify-center items-center mb-8">
+ 
+    <a href="#" class="cursor-pointer"><img src="../assets/logo/facebook-app-symbol.png" alt="facebook" class="h-8 "></a>
+    <a href="#" class="cursor-pointer"> <img src="../assets/logo/twitter.png" alt="Twitter" class="h-8 "></a>
+    <a href="#" class="cursor-pointer">  <img src="../assets/logo/linkedin.png" alt="LinkedIn" class="h-8 "></a>
+
+  </div>
+</section>
+</main>
+  <!-- Footer -->
+  <footer class=" bg-black text-white  py-6">
+    <div class=" md:mx-24  px-4">
+      <div class="flex flex-row justify-between items-center">
+        <div class=" flex text-center items-center md:text-left mb-4 md:mb-0">
+          <img src="../assets/logo/logo_footer.png" alt="" class="w-8 md:w-14">
+          <p class="text-xs md:text-sm"> © 2020 - Creative Digital Agency. </p>
+        </div>
+
+        <div id="backToTopBtn" title="Retour en haut" onclick="topFunction()">
+          <a href="#" class="text-white font-bold text-xs  md:text-sm">BACK TO TOP ^ </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+<script>
+   var mybutton = document.getElementById("backToTopBtn");
+
+     // Quand l'utilisateur clique sur le bouton, défiler jusqu'en haut du document
+  function topFunction() {
+      document.body.scrollTop = 0; // Pour Safari
+      document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
+  }
+
+</script>
+<script src="../script/script.js"></script>
+   </html>
